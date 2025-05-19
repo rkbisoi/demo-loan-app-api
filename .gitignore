@@ -1,1 +1,17 @@
-./venv
+# Virtual environment
+new/
+venv/
+
+
+# Python bytecode cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Environment files
+.env
+
+# IDE/editor folders
+.vscode/
+.idea/
+
