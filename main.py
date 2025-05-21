@@ -128,7 +128,7 @@ def process_application(application: ApplicationIn) -> DecisionResult:
             message="Application has been approved!"
         )
 
-@app.post("/create/applications", response_model=ApplicationOut)
+@app.post("/create/applications", response_model=ApplicationOut, status_code=201)
 def create_application(app_in: ApplicationIn):  
     try:
         # Process application
