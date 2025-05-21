@@ -43,11 +43,11 @@ class ApplicationIn(BaseModel):
         except ValueError as e:
             raise ValueError(f"Invalid date format or {str(e)}")
     
-    @validator('income')
-    def validate_income(cls, v):
-        if v <= 0:
-            raise ValueError("Income must be greater than zero")
-        return v
+    # @validator('income')
+    # def validate_income(cls, v):
+    #     if v <= 0:
+    #         raise ValueError("Income must be greater than zero")
+    #     return v
     
     @validator('loanAmount')
     def validate_loan_amount(cls, v, values):
